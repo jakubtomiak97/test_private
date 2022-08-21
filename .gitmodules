@@ -1,0 +1,3 @@
+[submodule "apps/helloworld/test_private"]
+	path = apps/helloworld/test_private
+	url = https://github.com/jakubtomiak97/test_private
