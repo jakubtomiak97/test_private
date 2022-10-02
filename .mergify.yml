@@ -1,0 +1,13 @@
+queue_rules:
+  - name: default
+    conditions: []  # no extra conditions needed to get merged
+
+pull_request_rules:
+  - name: merge using the merge queue
+    conditions:
+      - base=circleci-project-setup
+      - "check-success=ci/circleci: tests-done"
+    actions:
+      update:
+      queue:
+        name: default
