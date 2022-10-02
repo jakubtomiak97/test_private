@@ -5,8 +5,7 @@ queue_rules:
 pull_request_rules:
   - name: merge using the merge queue
     conditions:
-      - base=circleci-project-setup
-      - "check-success=ci/circleci: tests-done"
+      - base=main
     actions:
       update:
       queue:
