@@ -30,15 +30,5 @@ items:
         containers:
         - image: "{{ .Values.helloworld.image.name }}:{{ .Values.helloworld.image.tag }}"
           imagePullPolicy: {{ .Values.helloworld.image.pullPolicy }}
-          livenessProbe:
-            initialDelaySeconds: 60
-            tcpSocket:
-              port: 80
-          name: helloworld
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 5
           securityContext:
             privileged: false
