@@ -28,7 +28,8 @@ items:
           version: 1.0.0
       spec:
         containers:
-        - image: "{{ .Values.helloworld.image.name }}:{{ .Values.helloworld.image.tag }}"
+        - name: test
+          image: "{{ .Values.helloworld.image.name }}:{{ .Values.helloworld.image.tag }}"
           imagePullPolicy: {{ .Values.helloworld.image.pullPolicy }}
           securityContext:
             privileged: false
