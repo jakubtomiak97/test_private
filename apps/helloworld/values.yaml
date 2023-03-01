@@ -4,8 +4,8 @@ kubernetes:
 helloworld:
   namespace: defaultt
   image:
-    name: tutum/hello-world
-    tag: '5619160694375f4e8b7472aa86a2babc78348c50'
+    name: ubuntu
+    tag: 'latest'
     pullPolicy: IfNotPresent
   service:
     ingressClass: internal-ingress
