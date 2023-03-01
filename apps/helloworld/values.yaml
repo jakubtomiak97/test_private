@@ -2,7 +2,7 @@ kubernetes:
   host: https://kubernetes.default
 
 helloworld:
-  namespace: defaultt
+  namespace: default
   image:
     name: ubuntu
     tag: 'latest'
