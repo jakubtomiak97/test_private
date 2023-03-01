@@ -6,6 +6,6 @@ helloworld:
   image:
     name: ch0d0r/test
     tag: 'latest'
-    pullPolicy: IfNotPresent
+    pullPolicy: Always
   service:
     ingressClass: internal-ingress
